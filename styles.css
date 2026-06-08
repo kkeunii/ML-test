@@ -221,6 +221,7 @@ h2 {
   margin: 0 0 14px;
   font-size: 1.05rem;
   font-weight: 800;
+  white-space: pre-line;
 }
 
 .options {
