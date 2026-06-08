@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>머러이 시험 대비</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">9~14단원</p>
+        <h1>머신러닝의 이해 시험 대비 문제풀이</h1>
+      </div>
+      <div class="score-panel" aria-live="polite">
+        <span id="scoreText">0 / 0 정답</span>
+        <button id="resetButton" class="secondary-button" type="button">풀이 리셋</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="문제 보기 필터">
+        <nav id="unitNav" class="unit-nav"></nav>
+      </aside>
+
+      <section class="content">
+        <div class="content-toolbar">
+          <div>
+            <p id="viewLabel" class="eyebrow">전체</p>
+            <h2 id="viewTitle">전체 문제</h2>
+          </div>
+          <div class="progress-summary">
+            <span id="answeredText">푼 문제 0개</span>
+            <span id="wrongText">틀린 문제 0개</span>
+          </div>
+        </div>
+
+        <div id="questionList" class="question-list"></div>
+        <p id="emptyMessage" class="empty-message" hidden>표시할 문제가 없습니다.</p>
+      </section>
+    </main>
+
+    <script src="questions/unit9.js"></script>
+    <script src="questions/unit10.js"></script>
+    <script src="questions/unit11.js"></script>
+    <script src="questions/unit12.js"></script>
+    <script src="questions/unit13.js"></script>
+    <script src="questions/unit14.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
