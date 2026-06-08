@@ -6,6 +6,126 @@ window.QUESTION_UNITS.push({
   "questions": [
     {
       "id": "unit12-01",
+      "question": "결정나무 Decision Tree의 핵심 아이디어는?",
+      "choices": [
+        "데이터를 무작위로 섞어 평균값만 예측한다.",
+        "질문을 반복하며 데이터를 점점 더 순수한 그룹으로 나눈다.",
+        "모든 데이터를 하나의 직선으로만 분류한다.",
+        "라벨이 없는 데이터만 사용한다."
+      ],
+      "answerIndex": 1,
+      "explanation": "결정나무는 “나이가 어린가?”, “성별이 남성인가?”처럼 조건 질문을 통해 데이터를 나누고, 마지막 노드에서 예측을 수행한다."
+    },
+    {
+      "id": "unit12-02",
+      "question": "결정나무에서 좋은 첫 번째 질문의 조건으로 가장 적절한 것은?",
+      "choices": [
+        "데이터를 최대한 복잡하게 만든다.",
+        "나눈 후 각 그룹의 라벨이 더 잘 섞이도록 만든다.",
+        "나눈 후 각 그룹이 가능한 한 순수해지도록 만든다.",
+        "항상 가장 마지막 컬럼을 사용한다."
+      ],
+      "answerIndex": 2,
+      "explanation": "좋은 분할은 같은 클래스끼리 모이도록 만들어야 한다. 즉, 분할 후 불순도가 낮아지는 질문이 좋은 질문이다."
+    },
+    {
+      "id": "unit12-03",
+      "question": "결정나무의 max_depth를 너무 크게 설정할 때 발생할 수 있는 문제는?",
+      "choices": [
+        "모델이 학습을 전혀 하지 않는다.",
+        "훈련 데이터에 지나치게 맞춰져 과적합될 수 있다.",
+        "모든 특성이 자동 삭제된다.",
+        "테스트 데이터의 라벨이 바뀐다."
+      ],
+      "answerIndex": 1,
+      "explanation": "depth가 너무 깊으면 훈련 데이터를 세세하게 외우는 모델이 되어 새로운 데이터에 대한 성능이 떨어질 수 있다."
+    },
+    {
+      "id": "unit12-04",
+      "question": "SVM에서 support vector의 의미는?",
+      "choices": [
+        "전체 데이터의 평균점",
+        "결정경계에 가장 가까이 있는 중요한 데이터 포인트",
+        "테스트 데이터에만 존재하는 라벨",
+        "제거해야 할 이상치"
+      ],
+      "answerIndex": 1,
+      "explanation": "서포트 벡터는 결정경계와 가장 가까운 데이터들이다. SVM의 결정경계는 이 데이터들에 큰 영향을 받는다."
+    },
+    {
+      "id": "unit12-05",
+      "question": "SVM에서 margin의 의미로 옳은 것은?",
+      "choices": [
+        "모델 학습 시간",
+        "서포트 벡터와 결정경계 사이의 거리",
+        "데이터 개수",
+        "클래스 비율"
+      ],
+      "answerIndex": 1,
+      "explanation": "SVM은 결정경계와 서포트 벡터 사이의 간격, 즉 margin을 크게 하면서도 분류 오류를 줄이는 방향으로 학습한다."
+    },
+    {
+      "id": "unit12-06",
+      "question": "Hard margin SVM의 단점으로 적절한 것은?",
+      "choices": [
+        "이상치에 민감하고 선형적으로 완벽히 나뉘는 데이터에만 적합하다.",
+        "항상 비선형 문제만 해결한다.",
+        "margin을 전혀 고려하지 않는다.",
+        "데이터 크기가 커질수록 반드시 정확도가 100%가 된다."
+      ],
+      "answerIndex": 0,
+      "explanation": "Hard margin은 모든 데이터를 완벽하게 분리하려 하므로 이상치 하나에도 결정경계가 크게 흔들릴 수 있다."
+    },
+    {
+      "id": "unit12-07",
+      "question": "SVM의 C 값에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "C는 클래스 개수만 의미한다.",
+        "C는 분류 오류와 margin 오류 사이의 trade-off를 조절한다.",
+        "C가 커지면 항상 과소적합이 발생한다.",
+        "C는 K-means의 중심점 개수이다."
+      ],
+      "answerIndex": 1,
+      "explanation": "C가 크면 분류 오류를 더 강하게 줄이려 하고, C가 작으면 margin을 넓게 유지하는 쪽에 더 관대해질 수 있다."
+    },
+    {
+      "id": "unit12-08",
+      "question": "K-means 알고리즘의 일반적인 순서로 옳은 것은?",
+      "choices": [
+        "라벨 입력 → 손실 계산 → 역전파",
+        "중심점 초기화 → 가장 가까운 중심점에 할당 → 중심점 이동 반복",
+        "테스트 데이터 평가 → 훈련 데이터 생성 → 라벨 삭제",
+        "convolution → pooling → flatten"
+      ],
+      "answerIndex": 1,
+      "explanation": "K-means는 K개의 중심점을 정한 뒤, 각 데이터를 가까운 중심점에 할당하고, 각 클러스터 평균 위치로 중심점을 이동하는 과정을 반복한다."
+    },
+    {
+      "id": "unit12-09",
+      "question": "K-means에서 K를 정해야 한다는 말의 의미는?",
+      "choices": [
+        "데이터의 정답 라벨을 직접 입력해야 한다.",
+        "몇 개의 군집으로 나눌 것인지를 미리 정해야 한다.",
+        "학습률을 반드시 1로 정해야 한다.",
+        "모든 데이터를 하나의 군집으로 고정해야 한다."
+      ],
+      "answerIndex": 1,
+      "explanation": "K-means의 K는 클러스터 개수이다. 예를 들어 K=3이면 데이터를 세 개 군집으로 나누도록 학습한다."
+    },
+    {
+      "id": "unit12-10",
+      "question": "반도체 제조 데이터에서 결측치가 포함된 행을 모두 제거하면 문제가 되는 이유는?",
+      "choices": [
+        "데이터가 전혀 변하지 않기 때문이다.",
+        "결측치가 여러 컬럼에 퍼져 있어 대부분 또는 전체 데이터가 사라질 수 있기 때문이다.",
+        "결측치 제거가 항상 성능을 높이기 때문이다.",
+        "결측치는 라벨이기 때문이다."
+      ],
+      "answerIndex": 1,
+      "explanation": "반도체 데이터처럼 결측치가 많은 데이터에서 NaN이 있는 행을 모두 제거하면 분석할 데이터가 거의 남지 않을 수 있다. 따라서 평균 대체 등 다른 보정 방법을 고려한다. 13주차 추가 10문제: 신경망, 딥러닝, 퍼셉트론, 역전파"
+    },
+    {
+      "id": "unit12-11",
       "question": "(결정나무) Decision Tree 에 대한 설명으로 옳은 것은?",
       "choices": [
         "계속 질문을 해 가며 데이터를 나누는 사람의 추론 방식을 모방한 분류 알고리즘이다.",
@@ -17,7 +137,7 @@ window.QUESTION_UNITS.push({
       "explanation": "결정나무는 데이터셋을 잘 나누는 질문을 순차적으로 선택해 분류한다."
     },
     {
-      "id": "unit12-02",
+      "id": "unit12-12",
       "question": "(분류 모델) 분류 모델의 설명으로 옳은 것은?",
       "choices": [
         "Dog/Cat 처럼 불연속적인 클래스 값을 예측하는 지도학습 모델이다.",
@@ -29,7 +149,7 @@ window.QUESTION_UNITS.push({
       "explanation": "분류는 discrete state 를 예측하는 지도학습의 한 형태이다."
     },
     {
-      "id": "unit12-03",
+      "id": "unit12-13",
       "question": "(결정나무 사례) 앱 추천 예시에서 첫 번째 질문으로 '나이'가 '성별'보다 더 좋은 이유로 옳은 것은?",
       "choices": [
         "나이 질문 하나로 6 명 중 5 명을 정확히 추천해 성별 질문의 4 명보다 성능이 좋았기 때문이다.",
@@ -41,7 +161,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 예시에서 나이를 기준으로 먼저 나누면 청소년 그룹이 순수하게 분리되어 더 좋은 첫 질문이 되었다."
     },
     {
-      "id": "unit12-04",
+      "id": "unit12-14",
       "question": "(결정나무 사례) 완성된 앱 추천 Decision Tree 의 흐름으로 옳은 것은?",
       "choices": [
         "Age 가 young 이면 A, adult 이면 Gender 를 질문해 male 은 B, female 은 C 를 추천한다.",
@@ -53,7 +173,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의의 최종 트리는 Age 로 먼저 분기하고 adult 에서 Gender 로 추가 분기한다."
     },
     {
-      "id": "unit12-05",
+      "id": "unit12-15",
       "question": "(결정나무 해석) 같은 데이터셋에 대해 어떤 Decision Tree 가 더 좋은지 판단할 때 핵심 기준은?",
       "choices": [
         "각 질문이 데이터를 더 순수하고 정확하게 나누는지",
@@ -65,7 +185,7 @@ window.QUESTION_UNITS.push({
       "explanation": "좋은 분할은 하위 노드의 클래스 혼합을 줄이고 예측 정확도를 높인다."
     },
     {
-      "id": "unit12-06",
+      "id": "unit12-16",
       "question": "(SVM) SVM 의 특징으로 옳지 않은 것은?",
       "choices": [
         "선형/비선형 분류에 사용할 수 있다.",
@@ -77,7 +197,7 @@ window.QUESTION_UNITS.push({
       "explanation": "SVM 은 분류와 회귀 모두에 쓰이며, 특히 복잡한 분류 문제에 널리 사용되었다."
     },
     {
-      "id": "unit12-07",
+      "id": "unit12-17",
       "question": "(SVM 핵심) Support Vector 란 무엇인가?",
       "choices": [
         "각 클래스에서 결정경계에 가장 가까운 데이터 포인트",
@@ -89,7 +209,7 @@ window.QUESTION_UNITS.push({
       "explanation": "서포트 벡터는 결정경계를 정하는 데 큰 영향을 주는 경계 인접 샘플이다."
     },
     {
-      "id": "unit12-08",
+      "id": "unit12-18",
       "question": "(SVM 핵심) Margin 에 대한 설명으로 옳은 것은?",
       "choices": [
         "Support vector 와 결정경계 사이의 거리",
@@ -101,7 +221,7 @@ window.QUESTION_UNITS.push({
       "explanation": "SVM 은 일반적으로 마진을 크게 하면서 분류 오류를 조절하는 방향으로 학습한다."
     },
     {
-      "id": "unit12-09",
+      "id": "unit12-19",
       "question": "(SVM 핵심) Hyperplane 에 대한 설명으로 옳은 것은?",
       "choices": [
         "n 차원 공간에서 데이터를 구분하는 경계선 또는 경계면",
@@ -113,7 +233,7 @@ window.QUESTION_UNITS.push({
       "explanation": "2 차원에서는 직선처럼 보이지만 고차원에서는 초평면이라고 부른다."
     },
     {
-      "id": "unit12-10",
+      "id": "unit12-20",
       "question": "(Hard Margin) Hard margin 분류의 단점으로 옳은 것은?",
       "choices": [
         "데이터가 선형적으로 구분되어야 잘 작동하고 이상치에 민감하다.",
@@ -125,7 +245,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Hard margin 은 모든 샘플을 엄격히 분리하려 하므로 이상치 하나에도 결정경계가 크게 흔들릴 수 있다."
     },
     {
-      "id": "unit12-11",
+      "id": "unit12-21",
       "question": "(Soft Margin) Soft margin 분류에 대한 설명으로 옳은 것은?",
       "choices": [
         "일부 샘플이 마진 안에 들어오는 것을 허용해 마진 최대화와 오류 허용 사이 균형을 잡는다.",
@@ -137,7 +257,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Soft margin 은 하드 마진의 이상치 민감성을 줄이기 위한 방법이다."
     },
     {
-      "id": "unit12-12",
+      "id": "unit12-22",
       "question": "(SVM C) SVM 에서 C(cost) 하이퍼파라미터의 역할로 옳은 것은?",
       "choices": [
         "분류 오류와 마진 오류 간 trade-off 를 조절한다.",
@@ -149,7 +269,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 SVM 오류를 C*분류오류 + 마진오류 형태로 설명했다."
     },
     {
-      "id": "unit12-13",
+      "id": "unit12-23",
       "question": "(SVM C 해석) C 값이 큰 경우 일반적으로 어떤 경향이 있는가?",
       "choices": [
         "분류 오류를 더 강하게 줄이려 하므로 경계가 훈련 데이터에 더 민감해질 수 있다.",
@@ -161,7 +281,7 @@ window.QUESTION_UNITS.push({
       "explanation": "C 가 크면 오분류 패널티가 커져 훈련 데이터에 더 엄격히 맞추려는 경향이 있다."
     },
     {
-      "id": "unit12-14",
+      "id": "unit12-24",
       "question": "(Non-linear SVM) 선형적으로 분류할 수 없는 데이터에 SVM 을 적용하기 위한 방법으로 옳은 것은?",
       "choices": [
         "커널 함수나 다항 특성 추가를 활용한다.",
@@ -173,7 +293,7 @@ window.QUESTION_UNITS.push({
       "explanation": "고차원 특성 공간에서는 선형 초평면으로 나눌 수 있고, 원래 공간에서는 비선형 경계가 된다."
     },
     {
-      "id": "unit12-15",
+      "id": "unit12-25",
       "question": "(Gamma) SVM 의 gamma 값이 커질 때 나타날 수 있는 현상으로 가장 적절한 것은?",
       "choices": [
         "결정경계가 더 울퉁불퉁하고 훈련 데이터에 민감해질 수 있다.",
@@ -185,7 +305,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 gamma 가 커지면 초평면 인접 서포트 벡터 영향이 커져 경계가 복잡해질 수 있다고 설명했다."
     },
     {
-      "id": "unit12-16",
+      "id": "unit12-26",
       "question": "(Gamma/C) gamma 와 C 값을 조절하는 주된 목적은?",
       "choices": [
         "과적합을 방지하고 결정경계 복잡도를 조절하기 위해서이다.",
@@ -197,7 +317,7 @@ window.QUESTION_UNITS.push({
       "explanation": "SVM 에서 gamma 와 C 는 성능과 일반화에 큰 영향을 주는 주요 하이퍼파라미터이다."
     },
     {
-      "id": "unit12-17",
+      "id": "unit12-27",
       "question": "(SVM Regression) SVM 회귀에 대한 설명으로 옳은 것은?",
       "choices": [
         "제한된 마진 오류 안에 가능한 많은 샘플이 들어가도록 학습하며 경계 폭은 epsilon 으로 조절한다.",
@@ -209,7 +329,7 @@ window.QUESTION_UNITS.push({
       "explanation": "SVM 은 분류뿐 아니라 회귀에도 사용할 수 있으며 회귀에서는 epsilon tube 개념을 사용한다."
     },
     {
-      "id": "unit12-18",
+      "id": "unit12-28",
       "question": "(Iris SVM 코드) Iris SVM 실습에서 X = iris.data[:, 2:]로 선택한 특성은?",
       "choices": [
         "petal length 와 petal width",
@@ -221,7 +341,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 산점도와 결정경계 시각화를 위해 꽃잎 길이와 꽃잎 너비 두 특성을 사용했다."
     },
     {
-      "id": "unit12-19",
+      "id": "unit12-29",
       "question": "(Iris 데이터 분리) train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)의 설명으로 옳은 것은?",
       "choices": [
         "테스트 20%를 만들고 품종 클래스 비율을 유지한다.",
@@ -233,7 +353,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Iris 는 세 품종이 균형적이지만 stratify 를 사용하면 각 세트의 라벨 비율이 유지된다."
     },
     {
-      "id": "unit12-20",
+      "id": "unit12-30",
       "question": "(Iris SVM 코드) SVC(gamma='auto') 후 cross_val_score(..., cv=5)를 실행하는 목적은?",
       "choices": [
         "SVM 분류기의 교차검증 성능을 확인하기 위해서이다.",
@@ -245,7 +365,7 @@ window.QUESTION_UNITS.push({
       "explanation": "cv=5 로 훈련 데이터에서 SVM 의 평균 검증 성능을 평가한다."
     },
     {
-      "id": "unit12-21",
+      "id": "unit12-31",
       "question": "(Iris GridSearch) Iris SVM GridSearch 결과의 best_params_로 강의에 제시된 것은?",
       "choices": [
         "{'C': 8, 'gamma': 0.01}",
@@ -257,7 +377,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 예시의 최적 조합은 C=8, gamma=0.01 이었다."
     },
     {
-      "id": "unit12-22",
+      "id": "unit12-32",
       "question": "(GridSearch 결과 해석) grid.best_estimator_의 의미로 옳은 것은?",
       "choices": [
         "최적 하이퍼파라미터가 적용된 학습기 객체",
@@ -269,7 +389,7 @@ window.QUESTION_UNITS.push({
       "explanation": "best_estimator_를 사용해 최적 모델로 결정경계와 테스트 예측을 확인했다."
     },
     {
-      "id": "unit12-23",
+      "id": "unit12-33",
       "question": "(비지도학습) 비지도학습(Unsupervised Learning)에 대한 설명으로 옳은 것은?",
       "choices": [
         "학습할 데이터는 있지만 Label 이 주어지지 않은 경우 적용한다.",
@@ -281,7 +401,7 @@ window.QUESTION_UNITS.push({
       "explanation": "비지도학습은 유사성, 구조, 군집 등을 라벨 없이 찾는 학습이다."
     },
     {
-      "id": "unit12-24",
+      "id": "unit12-34",
       "question": "(지도/비지도 비교) 지도학습과 비지도학습의 가장 큰 차이로 옳은 것은?",
       "choices": [
         "지도학습은 정답 라벨을 사용하고, 비지도학습은 라벨 없이 데이터 구조를 찾는다.",
@@ -293,7 +413,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 그림은 라벨 표시가 있는 지도학습과 라벨 없이 점들의 그룹을 보는 비지도학습을 비교했다."
     },
     {
-      "id": "unit12-25",
+      "id": "unit12-35",
       "question": "(K-means) K-means 알고리즘의 초기화 단계로 옳은 것은?",
       "choices": [
         "임의로 K 개의 중심점(cluster centroid)을 선정한다.",
@@ -305,7 +425,7 @@ window.QUESTION_UNITS.push({
       "explanation": "K-means 는 먼저 K 개의 중심점을 정하고 할당/이동을 반복한다."
     },
     {
-      "id": "unit12-26",
+      "id": "unit12-36",
       "question": "(K-means) Cluster Assignment 단계의 설명으로 옳은 것은?",
       "choices": [
         "각 데이터별로 가장 가까운 중심점을 찾아 클러스터를 할당한다.",
@@ -317,7 +437,7 @@ window.QUESTION_UNITS.push({
       "explanation": "할당 단계는 현재 중심점과의 거리를 기준으로 데이터가 속할 클러스터를 정한다."
     },
     {
-      "id": "unit12-27",
+      "id": "unit12-37",
       "question": "(K-means) Move Centroid 단계의 설명으로 옳은 것은?",
       "choices": [
         "각 클러스터에 할당된 데이터들의 평균 위치로 중심점을 이동한다.",
@@ -329,7 +449,7 @@ window.QUESTION_UNITS.push({
       "explanation": "이동 단계는 클러스터 내부 평균을 새로운 중심점으로 삼는다."
     },
     {
-      "id": "unit12-28",
+      "id": "unit12-38",
       "question": "(K-means) K-means 알고리즘이 종료되는 조건으로 가장 적절한 것은?",
       "choices": [
         "중심점이 더 이상 이동하지 않거나 변화가 충분히 작을 때",
@@ -341,7 +461,7 @@ window.QUESTION_UNITS.push({
       "explanation": "중심점과 할당이 안정되면 더 이상 반복해도 결과가 바뀌지 않는다."
     },
     {
-      "id": "unit12-29",
+      "id": "unit12-39",
       "question": "(K-means 코드) KMeans(init='k-means++')에서 k-means++의 목적은?",
       "choices": [
         "초기 중심점들이 서로 멀리 떨어지도록 선택해 초기화 품질을 높이는 것이다.",
@@ -353,7 +473,7 @@ window.QUESTION_UNITS.push({
       "explanation": "k-means++는 무작위 초기화보다 안정적인 시작점을 제공하기 위한 방법이다."
     },
     {
-      "id": "unit12-30",
+      "id": "unit12-40",
       "question": "(K-means 코드) kmeans.cluster_centers_가 반환하는 것은?",
       "choices": [
         "학습된 각 클러스터 중심점의 좌표",
@@ -365,7 +485,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Iris K-means 실습에서는 중심점 좌표를 가져와 산점도에 표시했다."
     },
     {
-      "id": "unit12-31",
+      "id": "unit12-41",
       "question": "(반도체 데이터) UCI SECOM 반도체 제조 데이터 설명으로 옳은 것은?",
       "choices": [
         "1567 개 데이터와 약 591 개 feature 를 가지며 Pass/Fail 라벨과 결측치를 포함한다.",
@@ -377,7 +497,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 실제 반도체 생산라인에서 수집된 다변량 공정 데이터로 설명했다."
     },
     {
-      "id": "unit12-32",
+      "id": "unit12-42",
       "question": "(반도체 라벨) 반도체 데이터의 Pass/Fail 라벨 설명으로 옳은 것은?",
       "choices": [
         "-1 은 정상, 1 은 불량을 의미한다.",
@@ -389,7 +509,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 자료는 -1 이 정상, 1 이 불량을 의미한다고 명시했다."
     },
     {
-      "id": "unit12-33",
+      "id": "unit12-43",
       "question": "(결측치 처리) 반도체 데이터에서 NaN 이 포함된 행을 모두 제거했을 때 발생한 문제는?",
       "choices": [
         "데이터가 모두 사라졌다.",
@@ -401,7 +521,7 @@ window.QUESTION_UNITS.push({
       "explanation": "결측치가 여러 컬럼에 흩어져 있어 행 삭제 방식은 데이터 손실이 너무 컸다."
     },
     {
-      "id": "unit12-34",
+      "id": "unit12-44",
       "question": "(결측치 처리) 강의에서 반도체 데이터의 NaN 을 처리한 방법으로 옳은 것은?",
       "choices": [
         "Time 컬럼을 제거한 뒤 컬럼 평균값으로 결측치를 채웠다.",
@@ -413,7 +533,7 @@ window.QUESTION_UNITS.push({
       "explanation": "drop columns=['Time'] 후 fillna(raw_data.mean()) 형태로 평균 대체를 적용했다."
     },
     {
-      "id": "unit12-35",
+      "id": "unit12-45",
       "question": "(클래스 불균형) 반도체 데이터의 Pass/Fail 비율 설명으로 옳은 것은?",
       "choices": [
         "정상(-1)이 약 93.36%, 불량(1)이 약 6.64%로 불균형하다.",
@@ -425,7 +545,7 @@ window.QUESTION_UNITS.push({
       "explanation": "불량품 데이터 수가 양품보다 훨씬 적어 모델 성능 해석에 주의가 필요하다."
     },
     {
-      "id": "unit12-36",
+      "id": "unit12-46",
       "question": "(Heatmap) 반도체 heatmap 에서 흰색 공백이 나타날 수 있는 이유로 옳은 것은?",
       "choices": [
         "특정 feature 의 모든 값이 동일하면 corr()이 NaN 을 반환하기 때문이다.",
@@ -437,7 +557,7 @@ window.QUESTION_UNITS.push({
       "explanation": "상수 컬럼은 상관계수를 계산할 수 없어 NaN 으로 나타날 수 있다."
     },
     {
-      "id": "unit12-37",
+      "id": "unit12-47",
       "question": "(반도체 데이터 분리) 반도체 데이터에서 train_test_split(..., stratify=y)를 사용한 이유로 가장 적절한 것은?",
       "choices": [
         "불량/정상 비율을 훈련/테스트에 비슷하게 반영하기 위해서이다.",
@@ -449,7 +569,7 @@ window.QUESTION_UNITS.push({
       "explanation": "불량 클래스가 적으므로 stratify 가 없으면 테스트 세트에 불량이 너무 적게 들어갈 수 있다."
     },
     {
-      "id": "unit12-38",
+      "id": "unit12-48",
       "question": "(모델 성능 해석) 반도체 데이터에서 여러 머신러닝 모델의 recall/F1 이 낮게 나온 주요 원인으로 가장 적절한 것은?",
       "choices": [
         "클래스 불균형과 낮은 상관성, 많은 결측/잡음 등으로 불량 클래스를 잡기 어렵기 때문이다.",
@@ -461,7 +581,7 @@ window.QUESTION_UNITS.push({
       "explanation": "정확도는 높아 보여도 불량을 거의 못 잡는 결과가 나타났고, 강의는 클래스 불균형을 중요한 원인으로 언급했다."
     },
     {
-      "id": "unit12-39",
+      "id": "unit12-49",
       "question": "(오버샘플링) SMOTE 를 적용하는 목적에 가장 가까운 것은?",
       "choices": [
         "소수 클래스 데이터를 합성/증가시켜 불균형을 완화하기 위해서이다.",
@@ -473,7 +593,7 @@ window.QUESTION_UNITS.push({
       "explanation": "오버샘플링은 소수 클래스의 학습 기회를 늘려 recall 을 개선할 수 있다."
     },
     {
-      "id": "unit12-40",
+      "id": "unit12-50",
       "question": "(반도체 실습 결론) 반도체 실습에서 배울 수 있는 점으로 가장 적절한 것은?",
       "choices": [
         "단순 머신러닝 적용만으로 한계가 있을 수 있으며 결측치, 불필요 열, 불균형, 이상치, 딥러닝 등 전처리와 모델 전략을 함께 검토해야 한다.",

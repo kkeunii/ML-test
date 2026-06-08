@@ -6,6 +6,126 @@ window.QUESTION_UNITS.push({
   "questions": [
     {
       "id": "unit13-01",
+      "question": "인공지능, 기계학습, 딥러닝의 관계로 옳은 것은?",
+      "choices": [
+        "딥러닝이 가장 큰 개념이고 그 안에 인공지능이 포함된다.",
+        "인공지능 안에 기계학습이 있고, 기계학습 안에 딥러닝이 포함된다.",
+        "기계학습과 딥러닝은 완전히 무관하다.",
+        "인공지능은 딥러닝의 하위 분야이다."
+      ],
+      "answerIndex": 1,
+      "explanation": "딥러닝은 기계학습의 한 종류이고, 기계학습은 인공지능의 한 분야이다."
+    },
+    {
+      "id": "unit13-02",
+      "question": "인공신경망의 기본 구성으로 가장 적절한 것은?",
+      "choices": [
+        "입력층, 은닉층, 출력층",
+        "정렬층, 삭제층, 결측층",
+        "훈련층, 검증층, 테스트층",
+        "회귀층, 군집층, 시각화층"
+      ],
+      "answerIndex": 0,
+      "explanation": "인공신경망은 일반적으로 입력층, 하나 이상의 은닉층, 출력층으로 구성된다."
+    },
+    {
+      "id": "unit13-03",
+      "question": "딥러닝이 복잡한 패턴을 추론할 수 있는 이유로 가장 적절한 것은?",
+      "choices": [
+        "모든 데이터를 선형 함수 하나로만 처리하기 때문이다.",
+        "여러 층과 비선형 활성화 함수를 통해 복잡한 관계를 표현할 수 있기 때문이다.",
+        "라벨을 사용하지 않기 때문이다.",
+        "데이터 크기를 무조건 줄이기 때문이다."
+      ],
+      "answerIndex": 1,
+      "explanation": "딥러닝은 여러 은닉층과 비선형 활성화 함수를 이용해 입력과 출력 사이의 복잡한 관계를 학습할 수 있다."
+    },
+    {
+      "id": "unit13-04",
+      "question": "딥러닝의 단점으로 옳은 것은?",
+      "choices": [
+        "학습 데이터 확보에 많은 시간과 비용이 들 수 있다.",
+        "항상 내부 결정 과정을 사람이 쉽게 해석할 수 있다.",
+        "절대 과적합이 발생하지 않는다.",
+        "오픈소스 도구를 사용할 수 없다."
+      ],
+      "answerIndex": 0,
+      "explanation": "딥러닝은 성능이 좋을 수 있지만 많은 데이터가 필요하고, 과적합과 블랙박스 문제가 발생할 수 있다."
+    },
+    {
+      "id": "unit13-05",
+      "question": "활성화 함수의 역할로 가장 적절한 것은?",
+      "choices": [
+        "입력 신호의 총합을 다음 층으로 전달할 출력 신호로 변환한다.",
+        "데이터셋을 훈련용과 테스트용으로 나눈다.",
+        "모델의 파일 이름을 정한다.",
+        "결측치를 평균으로 대체한다."
+      ],
+      "answerIndex": 0,
+      "explanation": "활성화 함수는 뉴런의 입력 신호를 변환하여 다음 층으로 전달할지, 어떤 크기의 신호로 전달할지를 결정한다."
+    },
+    {
+      "id": "unit13-06",
+      "question": "ReLU 함수에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "모든 입력을 0과 1 사이로 압축한다.",
+        "0보다 작은 값은 0으로, 0보다 큰 값은 그대로 출력한다.",
+        "항상 -1과 1 사이의 값만 출력한다.",
+        "출력층에서만 사용할 수 있다."
+      ],
+      "answerIndex": 1,
+      "explanation": "ReLU는 max(0, x) 형태의 함수이다. 계산이 단순하고 깊은 신경망에서 널리 사용된다."
+    },
+    {
+      "id": "unit13-07",
+      "question": "단층 퍼셉트론이 XOR 문제를 해결하지 못하는 이유는?",
+      "choices": [
+        "XOR은 라벨이 없는 데이터이기 때문이다.",
+        "XOR은 선형 분리 함수로 표현할 수 없기 때문이다.",
+        "XOR은 입력값이 하나뿐이기 때문이다.",
+        "XOR은 회귀 문제이기 때문이다."
+      ],
+      "answerIndex": 1,
+      "explanation": "AND, OR은 직선으로 구분 가능하지만 XOR은 두 클래스를 하나의 직선으로 나눌 수 없다. 이 때문에 단층 퍼셉트론의 한계 사례로 소개된다."
+    },
+    {
+      "id": "unit13-08",
+      "question": "다층 퍼셉트론이 XOR 문제를 해결할 수 있는 이유는?",
+      "choices": [
+        "은닉층을 통해 비선형적인 표현을 만들 수 있기 때문이다.",
+        "입력값을 삭제하기 때문이다.",
+        "정답 라벨을 바꾸기 때문이다.",
+        "출력층을 없애기 때문이다."
+      ],
+      "answerIndex": 0,
+      "explanation": "입력층과 출력층 사이에 은닉층을 두면 비선형적인 결정 구조를 만들 수 있어 XOR처럼 선형 분리가 불가능한 문제도 해결할 수 있다."
+    },
+    {
+      "id": "unit13-09",
+      "question": "오차 역전파 Backpropagation의 핵심 역할은?",
+      "choices": [
+        "예측 오차를 바탕으로 각 층의 가중치를 조정하는 것",
+        "데이터를 무작위로 시각화하는 것",
+        "라벨을 제거하는 것",
+        "입력 이미지를 회색조로 변환하는 것"
+      ],
+      "answerIndex": 0,
+      "explanation": "오차 역전파는 출력에서 발생한 오차를 뒤쪽 층에서 앞쪽 층 방향으로 전달하며 가중치를 갱신하는 알고리즘이다."
+    },
+    {
+      "id": "unit13-10",
+      "question": "손실 함수와 최적화 함수의 관계 설명으로 옳은 것은?",
+      "choices": [
+        "손실 함수는 오차를 측정하고, 최적화 함수는 그 오차를 줄이도록 가중치를 업데이트한다.",
+        "손실 함수는 이미지를 확대하고, 최적화 함수는 이미지를 축소한다.",
+        "손실 함수는 데이터 분할 비율만 정한다.",
+        "최적화 함수는 정답 라벨을 자동으로 만든다."
+      ],
+      "answerIndex": 0,
+      "explanation": "손실 함수는 예측값과 실제값의 차이를 수치화하고, 최적화 함수는 그 값을 줄이는 방향으로 모델 파라미터를 조정한다. 14주차 추가 10문제: 이미지 딥러닝, MNIST, CNN"
+    },
+    {
+      "id": "unit13-11",
       "question": "(AI/ML/DL) 인공지능, 기계학습, 딥러닝의 포함 관계로 옳은 것은?",
       "choices": [
         "딥러닝은 기계학습의 일종이고, 기계학습은 인공지능의 일종이다.",
@@ -17,7 +137,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 그림은 인공지능 안에 기계학습, 그 안에 딥러닝이 포함되는 구조를 보인다."
     },
     {
-      "id": "unit13-02",
+      "id": "unit13-12",
       "question": "(기계학습 정의) 기계학습에 대한 강의의 정의로 가장 적절한 것은?",
       "choices": [
         "어떤 작업이 있을 때 데이터를 이용한 학습으로 성능을 높이는 것",
@@ -29,7 +149,7 @@ window.QUESTION_UNITS.push({
       "explanation": "머신러닝은 데이터에서 패턴을 학습해 작업 성능을 높이는 접근이다."
     },
     {
-      "id": "unit13-03",
+      "id": "unit13-13",
       "question": "(인공신경망) 인공신경망에 대한 설명으로 옳은 것은?",
       "choices": [
         "인간의 뉴런 구조를 본떠 만든 기계학습 모델이다.",
@@ -41,7 +161,7 @@ window.QUESTION_UNITS.push({
       "explanation": "인공신경망은 뉴런과 연결 구조를 소프트웨어적으로 모방한 모델이다."
     },
     {
-      "id": "unit13-04",
+      "id": "unit13-14",
       "question": "(신경망 구조) 일반적인 인공신경망을 구성하는 계층으로 옳은 것은?",
       "choices": [
         "입력층, 은닉층, 출력층",
@@ -53,7 +173,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 신경망을 입력층, 은닉층, 출력층으로 설명했다."
     },
     {
-      "id": "unit13-05",
+      "id": "unit13-15",
       "question": "(비선형성) 신경망에서 비선형 활성화 함수를 사용하는 이유로 가장 적절한 것은?",
       "choices": [
         "선형 처리만으로 표현하기 어려운 복잡한 패턴과 비선형 관계를 추론하기 위해서이다.",
@@ -65,7 +185,7 @@ window.QUESTION_UNITS.push({
       "explanation": "활성화 함수를 통해 선형 결합을 넘어 복잡한 패턴을 모델링할 수 있다."
     },
     {
-      "id": "unit13-06",
+      "id": "unit13-16",
       "question": "(심층신경망) 심층 인공신경망(DNN)에 대한 설명으로 옳은 것은?",
       "choices": [
         "은닉층을 여러 개로 늘린 신경망이며, 늘어난 층에 따른 학습 방법도 중요하다.",
@@ -77,7 +197,7 @@ window.QUESTION_UNITS.push({
       "explanation": "DNN 은 은닉층이 깊어질수록 복잡한 문제를 풀 수 있지만 학습과 해석이 어려워질 수 있다."
     },
     {
-      "id": "unit13-07",
+      "id": "unit13-17",
       "question": "(딥러닝 장점) 강의에서 언급한 딥러닝의 장점으로 옳지 않은 것은?",
       "choices": [
         "일반적으로 기존 사람이 만든 모델보다 성능이 좋을 수 있다.",
@@ -89,7 +209,7 @@ window.QUESTION_UNITS.push({
       "explanation": "딥러닝은 많은 학습 데이터 확보가 큰 비용이라는 단점도 있다."
     },
     {
-      "id": "unit13-08",
+      "id": "unit13-18",
       "question": "(딥러닝 단점) 딥러닝의 단점으로 가장 적절한 것은?",
       "choices": [
         "모델이 블랙박스라 해석과 개선이 어려울 수 있다.",
@@ -101,7 +221,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 데이터 확보 비용, 과적합, 블랙박스 해석 어려움을 단점으로 들었다."
     },
     {
-      "id": "unit13-09",
+      "id": "unit13-19",
       "question": "(딥러닝 적용) 이미지 인식의 세부 작업 연결로 옳은 것은?",
       "choices": [
         "이미지 분류: 특정 물체가 있는지 판단, 이미지 검출: 위치를 박스로 검출, 이미지 분할: 픽셀 단위로 분할",
@@ -113,7 +233,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 이미지 분류, 검출, 분할의 차이를 예시 이미지와 함께 설명했다."
     },
     {
-      "id": "unit13-10",
+      "id": "unit13-20",
       "question": "(딥러닝 사례) DeepFace 사례에 대한 설명으로 옳은 것은?",
       "choices": [
         "페이스북 연구진의 딥러닝 기반 얼굴 인식 시스템으로 사람 수준에 가까운 약 97% 인식률을 보였다.",
@@ -125,7 +245,7 @@ window.QUESTION_UNITS.push({
       "explanation": "DeepFace 는 얼굴 인식 분야에서 딥러닝 적용 사례로 제시되었다."
     },
     {
-      "id": "unit13-11",
+      "id": "unit13-21",
       "question": "(퍼셉트론) 컴퓨터 과학에서 인공적인 신경세포를 흉내 내는 프로그램을 무엇이라 부르는가?",
       "choices": [
         "퍼셉트론(perceptron)",
@@ -137,7 +257,7 @@ window.QUESTION_UNITS.push({
       "explanation": "퍼셉트론은 뉴런을 대신하는 함수와 수치 입력을 통해 인공 신경세포를 흉내 낸다."
     },
     {
-      "id": "unit13-12",
+      "id": "unit13-22",
       "question": "(활성화 함수) 활성화 함수의 역할로 옳은 것은?",
       "choices": [
         "입력 신호의 총합을 출력 신호로 변환해 다음 층으로 전달할지 결정한다.",
@@ -149,7 +269,7 @@ window.QUESTION_UNITS.push({
       "explanation": "활성화 함수는 이전 layer 결과값을 변환해 다음 layer 뉴런에 신호를 전달한다."
     },
     {
-      "id": "unit13-13",
+      "id": "unit13-23",
       "question": "(Sigmoid) Sigmoid 함수를 깊은 신경망에서 사용할 때 발생할 수 있는 문제로 옳은 것은?",
       "choices": [
         "출력이 0~1 사이로 압축되어 층이 많아지면 0 으로 수렴하는 문제가 생길 수 있다.",
@@ -161,7 +281,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 sigmoid 의 출력 범위로 인해 층이 많아지면 신호가 약해지는 문제를 언급했다."
     },
     {
-      "id": "unit13-14",
+      "id": "unit13-24",
       "question": "(ReLU) ReLU(Rectified Linear Unit)에 대한 설명으로 옳은 것은?",
       "choices": [
         "0 보다 작은 값은 0 으로, 0 보다 큰 값은 그대로 반환한다.",
@@ -173,7 +293,7 @@ window.QUESTION_UNITS.push({
       "explanation": "ReLU 는 max(0,x) 형태이며 딥러닝에서 널리 사용된다."
     },
     {
-      "id": "unit13-15",
+      "id": "unit13-25",
       "question": "(행렬 표현) X=[1,2], W=[0.5,0.6]일 때 신호합산 X dot W 값은?",
       "choices": [
         "1.7",
@@ -185,7 +305,7 @@ window.QUESTION_UNITS.push({
       "explanation": "1*0.5 + 2*0.6 = 1.7 이다."
     },
     {
-      "id": "unit13-16",
+      "id": "unit13-26",
       "question": "(AND 퍼셉트론) 강의의 AND 회로 구현에서 W=[0.5,0.5], b=-0.7 을 사용하면 (1,1)의 출력은?",
       "choices": [
         "1",
@@ -197,7 +317,7 @@ window.QUESTION_UNITS.push({
       "explanation": "0.5+0.5-0.7=0.3>0 이므로 activation 은 1 을 반환한다. 다른 조합은 -1 이 된다."
     },
     {
-      "id": "unit13-17",
+      "id": "unit13-27",
       "question": "(OR 퍼셉트론) 강의의 OR 회로 구현에서 같은 W=[0.5,0.5]를 두고 b 를 0.7 로 바꾸면 어떤 효과가 있는가?",
       "choices": [
         "(-1,-1)을 제외한 입력에서 1 이 나오는 OR 회로가 된다.",
@@ -209,7 +329,7 @@ window.QUESTION_UNITS.push({
       "explanation": "편향 b 만 바꿔도 활성화 함수 입력 기준이 달라져 OR 형태의 출력이 가능하다."
     },
     {
-      "id": "unit13-18",
+      "id": "unit13-28",
       "question": "(퍼셉트론 코드) activation(s) 함수가 if s > 0: return 1 else: return -1 로 구현되어 있을 때, s=-0.2 의 출력은?",
       "choices": [
         "-1",
@@ -221,7 +341,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 코드는 양수일 때만 1, 그 외는 -1 을 반환하는 계단함수 형태이다."
     },
     {
-      "id": "unit13-19",
+      "id": "unit13-29",
       "question": "(학습 규칙) 퍼셉트론 가중치 갱신식의 핵심으로 옳은 것은?",
       "choices": [
         "현재 가중치에 학습률*(목표값-출력값)*입력 신호를 더한다.",
@@ -233,7 +353,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 w^{k+1}=w^k+eta(t-y_hat)x 형태의 학습 규칙을 설명했다."
     },
     {
-      "id": "unit13-20",
+      "id": "unit13-30",
       "question": "(학습률) learning rate eta 의 역할로 옳은 것은?",
       "choices": [
         "가중치를 매 단계 얼마나 크게 갱신할지 결정한다.",
@@ -245,7 +365,7 @@ window.QUESTION_UNITS.push({
       "explanation": "학습률은 보통 0~1 사이 값으로 가중치 변경 폭을 조절한다."
     },
     {
-      "id": "unit13-21",
+      "id": "unit13-31",
       "question": "(Epoch) epoch 의 의미로 옳은 것은?",
       "choices": [
         "전체 데이터셋에 대해 학습을 몇 번 반복할지 나타내는 횟수",
@@ -257,7 +377,7 @@ window.QUESTION_UNITS.push({
       "explanation": "epoch 은 전체 데이터셋을 기준으로 한 훈련 반복 횟수이다."
     },
     {
-      "id": "unit13-22",
+      "id": "unit13-32",
       "question": "(XOR) XOR 연산의 특징으로 옳은 것은?",
       "choices": [
         "두 입력이 같으면 0 또는 -1, 다르면 1 이 되는 연산",
@@ -269,7 +389,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 코드에서는 0 대신 -1 을 사용했으므로 같은 입력은 -1, 다른 입력은 1 로 표현했다."
     },
     {
-      "id": "unit13-23",
+      "id": "unit13-33",
       "question": "(퍼셉트론 한계) 단층 퍼셉트론이 XOR 를 구현하지 못하는 이유로 옳은 것은?",
       "choices": [
         "XOR 문제는 선형 분리 함수가 존재하지 않기 때문이다.",
@@ -281,7 +401,7 @@ window.QUESTION_UNITS.push({
       "explanation": "단층 퍼셉트론은 선형 함수 기반이므로 XOR 처럼 선형 분리 불가능한 문제를 풀 수 없다."
     },
     {
-      "id": "unit13-24",
+      "id": "unit13-34",
       "question": "(AI Winter) XOR 문제가 인공지능의 겨울과 연결된 이유로 옳은 것은?",
       "choices": [
         "퍼셉트론의 한계가 부각되며 연구비 축소와 연구자 이탈 등 신경망 분야 침체를 가져왔기 때문이다.",
@@ -293,7 +413,7 @@ window.QUESTION_UNITS.push({
       "explanation": "민스키의 퍼셉트론 한계 지적은 신경망 연구 침체의 상징적 사건으로 설명된다."
     },
     {
-      "id": "unit13-25",
+      "id": "unit13-35",
       "question": "(다층 퍼셉트론) 입력층과 출력층 사이의 중간 노드와 계층을 각각 무엇이라 하는가?",
       "choices": [
         "은닉노드와 은닉층",
@@ -305,7 +425,7 @@ window.QUESTION_UNITS.push({
       "explanation": "hidden node 와 hidden layer 가 비선형 함수 표현 능력을 높인다."
     },
     {
-      "id": "unit13-26",
+      "id": "unit13-36",
       "question": "(XOR 해결) 다층 퍼셉트론으로 XOR 를 구성하는 강의 예시의 조합으로 옳은 것은?",
       "choices": [
         "OR, NAND, AND 회로의 조합",
@@ -317,7 +437,7 @@ window.QUESTION_UNITS.push({
       "explanation": "XOR 는 x OR y 와 x NAND y 를 만든 뒤 이 둘을 AND 하는 구조로 구현할 수 있다."
     },
     {
-      "id": "unit13-27",
+      "id": "unit13-37",
       "question": "(오차 역전파) 오차 역전파(backpropagation)에 대한 설명으로 옳은 것은?",
       "choices": [
         "출력 오차를 거꾸로 전달해 다층 퍼셉트론의 가중치를 갱신하는 학습 알고리즘이다.",
@@ -329,7 +449,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Backpropagation 은 다층 신경망 학습을 가능하게 한 핵심 알고리즘이다."
     },
     {
-      "id": "unit13-28",
+      "id": "unit13-38",
       "question": "(손실/비용 함수) 손실 함수와 비용 함수에 대한 강의 설명으로 옳은 것은?",
       "choices": [
         "손실 함수는 개별 샘플 또는 배치의 예측 오차를, 비용 함수는 전체 데이터셋 관점의 오차를 표현한다.",
@@ -341,7 +461,7 @@ window.QUESTION_UNITS.push({
       "explanation": "딥러닝은 배치 단위로 학습하기 때문에 손실함수를 사용해 오차를 줄인다."
     },
     {
-      "id": "unit13-29",
+      "id": "unit13-39",
       "question": "(신경망 역사) 단층, 얕은, 심층 신경망의 구분으로 옳은 것은?",
       "choices": [
         "단층: 입력층-출력층, 얕은: 입력층-은닉층-출력층, 심층: 입력층-여러 은닉층-출력층",
@@ -353,7 +473,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 표는 은닉층의 유무와 개수로 신경망을 구분했다."
     },
     {
-      "id": "unit13-30",
+      "id": "unit13-40",
       "question": "(딥러닝 플랫폼) TensorFlow 에 대한 설명으로 옳은 것은?",
       "choices": [
         "구글 인공지능 개발부서에서 개발하여 2015 년 오픈소스로 공개된 머신러닝/딥러닝 플랫폼이다.",
@@ -365,7 +485,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 TensorFlow 를 대표적인 딥러닝 플랫폼으로 소개했다."
     },
     {
-      "id": "unit13-31",
+      "id": "unit13-41",
       "question": "(Keras Sequential) keras.models.Sequential 의 의미로 가장 적절한 것은?",
       "choices": [
         "층을 순서대로 쌓아 모델을 구성하는 방식",
@@ -377,7 +497,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Sequential 모델은 Flatten, Dense 등의 층을 순서대로 연결한다."
     },
     {
-      "id": "unit13-32",
+      "id": "unit13-42",
       "question": "(Flatten) Keras Flatten 층의 역할로 옳은 것은?",
       "choices": [
         "2 차원 또는 다차원 입력을 1 차원 벡터로 펼친다.",
@@ -389,7 +509,7 @@ window.QUESTION_UNITS.push({
       "explanation": "순차적 심층 신경망은 2 차원 배열을 직접 사용하기 어려워 Flatten 으로 벡터화한다."
     },
     {
-      "id": "unit13-33",
+      "id": "unit13-43",
       "question": "(Dense) Dense 층에 대한 설명으로 옳은 것은?",
       "choices": [
         "완전 연결층으로 이전 층의 노드와 조밀하게 연결된다.",
@@ -401,7 +521,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Dense 는 fully connected layer 를 의미한다."
     },
     {
-      "id": "unit13-34",
+      "id": "unit13-44",
       "question": "(모델 컴파일) model.compile(optimizer='adam', loss='sparse_categorical_crossentropy',\nmetrics=['accuracy'])에서 지정하지 않은 것은?",
       "choices": [
         "최적화 함수",
@@ -413,7 +533,7 @@ window.QUESTION_UNITS.push({
       "explanation": "compile 단계에서는 optimizer, loss, metrics 등을 지정한다."
     },
     {
-      "id": "unit13-35",
+      "id": "unit13-45",
       "question": "(손실 함수 선택) Iris 처럼 라벨이 정수 형태인 다중 클래스 분류에서 사용한 손실 함수는?",
       "choices": [
         "sparse_categorical_crossentropy",
@@ -425,7 +545,7 @@ window.QUESTION_UNITS.push({
       "explanation": "sparse categorical crossentropy 는 정수 라벨 다중 클래스 분류에 적합하다."
     },
     {
-      "id": "unit13-36",
+      "id": "unit13-46",
       "question": "(모델 저장/불러오기) Keras 모델 저장과 불러오기에 대한 설명으로 옳은 것은?",
       "choices": [
         "model.save('파일.keras')로 모델과 가중치를 저장하고 keras.models.load_model()로 불러올 수 있다.",
@@ -437,7 +557,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의는 학습 시간을 줄이기 위해 학습된 모델을 .keras 파일로 저장하는 방법을 설명했다."
     },
     {
-      "id": "unit13-37",
+      "id": "unit13-47",
       "question": "(활성화 함수) 다중 클래스 출력층에서 각 클래스 확률처럼 해석되도록 많이 사용하는 활성화 함수는?",
       "choices": [
         "softmax",
@@ -449,7 +569,7 @@ window.QUESTION_UNITS.push({
       "explanation": "Softmax 는 여러 출력 노드의 값을 확률처럼 정규화해 다중 클래스 분류 출력층에 자주 사용된다."
     },
     {
-      "id": "unit13-38",
+      "id": "unit13-48",
       "question": "(손실 함수) 손실 함수와 용도의 연결이 옳은 것은?",
       "choices": [
         "mean_squared_error - 수치를 직접 예측하는 회귀",
@@ -461,7 +581,7 @@ window.QUESTION_UNITS.push({
       "explanation": "강의 표는 MSE 를 회귀, binary_crossentropy 를 이진 분류, sparse_categorical_crossentropy 를 정수 라벨 다중 클 래스 분류에 연결했다."
     },
     {
-      "id": "unit13-39",
+      "id": "unit13-49",
       "question": "(최적화) GD 와 SGD 의 차이로 옳은 것은?",
       "choices": [
         "GD 는 전체 데이터로 기울기를 계산하고, SGD 는 작은 데이터 단위로 기울기를 계산해 업데이트한다.",
@@ -473,7 +593,7 @@ window.QUESTION_UNITS.push({
       "explanation": "SGD 는 전체 데이터를 매번 쓰는 부담을 줄여 더 빠르게 업데이트할 수 있다."
     },
     {
-      "id": "unit13-40",
+      "id": "unit13-50",
       "question": "(최적화 함수) SGD 를 개선한 최적화 방법의 예로 옳은 것은?",
       "choices": [
         "Momentum, RMSProp, Adam",
