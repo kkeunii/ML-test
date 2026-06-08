@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "examQuizProgress.v1";
+  const STORAGE_KEY = "examQuizProgress.v2";
   const questionUnits = window.QUESTION_UNITS || [];
   const state = {
     view: "all",
